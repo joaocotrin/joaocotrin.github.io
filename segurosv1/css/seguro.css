@@ -1,0 +1,70 @@
+.seguro_bg {
+  background: var(--cor-11);
+}
+
+.titulo_seguro {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.titulo_seguro h1 {
+  padding-top: 4px;
+}
+
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.seguros_plano {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 40px 30px 30px 60px;
+  background-color: var(--cor-12);
+  color: white;
+}
+
+.seguros_plano h2 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.seguros_plano span {
+  grid-column: 2;
+  text-align: right;
+  display: block;
+}
+
+.seguros_plano ul {
+  grid-column: 1;
+  position: relative;
+}
+
+.seguros li::before {
+  content: url(img/icones/lista.svg);
+  position: absolute;
+  left: -20px;
+}
+
+.seguros_plano li + li {
+  margin-top: 20px;
+}
+
+.botao {
+  grid-column: 1;
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background-color: var(--cor-10);
+  max-width: max-content;
+  border-radius: 4px;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.secundario {
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-p5);
+}

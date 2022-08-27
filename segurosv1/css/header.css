@@ -1,0 +1,24 @@
+.header {
+  background: var(--fundo2);
+}
+
+.header div {
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header img {
+  height: 32px;
+  width: 136px;
+  align-self: center;
+}
+
+.menu {
+  gap: 30px;
+  align-items: center;
+}
+
+.menu li {
+  padding: 10px;
+}

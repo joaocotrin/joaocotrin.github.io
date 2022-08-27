@@ -1,0 +1,38 @@
+.tecnologia_bg {
+  background: var(--cor-11);
+  box-shadow: inset 0 -80px white, inset 0 80px white;
+  margin-bottom: 85px;
+}
+
+.tec_pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.descricao {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.descricao h2 {
+  margin: 30px 0px;
+}
+
+.link {
+  color: var(--cor-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.link::after {
+  content: "";
+  background: var(--cor-p1);
+  height: 4px;
+  width: 267px;
+  display: inline-block;
+}

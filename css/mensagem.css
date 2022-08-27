@@ -1,0 +1,119 @@
+.titulo {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.mensagem_bg {
+  background: linear-gradient(var(--cor-11) 60%, var(--cor-1) 0%);
+}
+
+.box_contato {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding-bottom: 120px;
+}
+
+.contato_dados {
+  background: var(--cor-12);
+  color: var(--cor-4);
+  padding: 60px 60px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.contato_dados h2 {
+  margin-bottom: 60px;
+}
+
+.localizacao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.localizacao li {
+  grid-column: 2;
+}
+
+.localizacao li + li {
+  margin-top: 5px;
+}
+
+.email {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 45px;
+  gap: 10px;
+}
+
+.email li {
+  grid-column: 2;
+}
+
+.tel {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.tel li {
+  grid-column: 2;
+}
+
+.redes {
+  display: flex;
+  gap: 35px;
+  margin-top: 60px;
+}
+
+.mensagem {
+  padding: 65px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mensagem label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mensagem input[type="text"],
+.mensagem input[type="number"],
+.mensagem input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid var(--cor-2);
+  background: var(--cor-1);
+  box-sizing: border-box;
+}
+
+.mensagem input[type="text"]::placeholder,
+.mensagem input[type="number"]::placeholder,
+.mensagem input[type="email"]::placeholder {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  padding: 15px;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+}
+
+.mensagem a {
+  text-transform: uppercase;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  max-width: max-content;
+  padding: 15px 35px;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  border-radius: 4px;
+}
+
+.formulario {
+  background: white;
+  border-radius: 0px 4px 4px 0px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}

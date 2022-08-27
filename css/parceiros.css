@@ -1,0 +1,21 @@
+.parceiros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros li {
+  border-left: 1px solid var(--cor-5);
+  display: flex;
+  padding: 40px;
+}
+
+.parceiros img {
+  margin: auto;
+}
+
+.parceiros li:nth-child(n + 5) {
+  border-top: 1px solid var(--cor-5);
+}

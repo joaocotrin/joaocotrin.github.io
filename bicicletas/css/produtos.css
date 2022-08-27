@@ -1,0 +1,92 @@
+.produtos {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: url(img/dec/top-right.svg) no-repeat right 55px top;
+}
+
+.produtos img {
+  max-width: 100%;
+  max-height: auto;
+  grid-area: 1/1;
+  border-radius: 4px;
+}
+
+.img-preco {
+  display: grid;
+}
+
+.preco {
+  display: inline-block;
+  place-self: start end;
+  grid-area: 1/1;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0px 0px 4px;
+  margin-top: 20px;
+  background: var(--cor-12);
+}
+
+.produtos h2 {
+  margin-bottom: 20px;
+}
+
+.produtos h2::before {
+  content: "";
+  background: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.produtos p {
+  margin-bottom: 30px;
+}
+
+.produtos li + li {
+  margin-top: 15px;
+}
+
+.produtos li {
+  gap: 10px;
+}
+
+.produtos ul img {
+  width: 25px;
+  height: 25px;
+}
+
+.bike_info {
+  grid-column: 2;
+}
+
+.produtos a {
+  place-self: end end;
+  padding: 15px 30px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  border-radius: 4px;
+  color: var(--cor-p5);
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.produtos a img {
+  align-self: center;
+  height: 10px;
+}
+
+.produtos div .grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.produtos_magic_might {
+  background: linear-gradient(to right, white 30%, black 0%);
+  padding: 60px 0px;
+  position: relative;
+}
+
+.produtos_magic_might::before {
+  content: url(img/dec/top-right.svg);
+  position: absolute;
+  right: 55px;
+}
