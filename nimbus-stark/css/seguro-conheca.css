@@ -1,0 +1,13 @@
+.seguro-conheca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: ;
+}
+
+.seguro-conheca img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.seguro-info {
+}

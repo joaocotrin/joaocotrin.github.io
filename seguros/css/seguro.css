@@ -2,6 +2,10 @@
   background: var(--cor-11);
 }
 
+.seguro_bg .container {
+  background: url(img/dec/top-right.svg) no-repeat right 20px top 60px;
+}
+
 .titulo_seguro {
   padding-top: 60px;
   padding-bottom: 75px;
