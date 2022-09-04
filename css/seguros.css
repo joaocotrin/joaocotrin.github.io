@@ -56,5 +56,51 @@
 }
 
 .botao {
-  grid-column: 1;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros h3 {
+    margin-bottom: 0px;
+  }
+
+  .seguros div ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+  }
+
+  .seguros li {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+
+  .seguros ul li::before {
+    content: url(img/icones/lista.svg);
+    position: initial;
+    display: inline-block;
+    margin: 0px;
+  }
+
+  .seguros li {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 675px) {
+  .seguros div ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .seguros div {
+    padding: 10px 10px 10px 30px;
+  }
 }

@@ -9,7 +9,7 @@
 .parceiros li {
   border-left: 1px solid var(--cor-5);
   display: flex;
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .parceiros img {
@@ -18,4 +18,26 @@
 
 .parceiros li:nth-child(n + 5) {
   border-top: 1px solid var(--cor-5);
+}
+
+@media (max-width: 890px) {
+  .parceiros {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 90px;
+  }
+
+  .parceiros li:nth-child(n + 3) {
+    border-top: 1px solid var(--cor-5);
+  }
+}
+
+@media (max-width: 450px) {
+  .parceiros {
+    grid-template-columns: 1fr;
+    padding-bottom: 90px;
+  }
+
+  .parceiros li:nth-child(n + 2) {
+    border-top: 1px solid var(--cor-5);
+  }
 }

@@ -1,16 +1,16 @@
 .bicicletas {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 40px;
-  padding: 40px 20px 140px 20px;
+  padding: 40px 20px 20px 20px;
   margin: auto;
   max-width: 1300px;
+  overflow-x: auto;
 }
 
 .bicicletas img {
   max-width: 100%;
-  object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .bicicletas h3 {
@@ -20,7 +20,7 @@
   gap: 10px;
 }
 
-.bicicletas h3::before {
+.bicicletas a h3::before {
   content: "";
   background: var(--cor-p1);
   height: 8px;
@@ -28,7 +28,16 @@
   display: inline-block;
 }
 
-.bicicletas h3:hover::before {
+.bicicletas a:hover h3::before {
   width: 24px;
   transition: 0.2s;
+}
+
+@media (max-width: 890px) {
+  .bicicletas {
+    gap: 20px;
+  }
+  .bicicletas img {
+    max-width: 300px;
+  }
 }

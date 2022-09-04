@@ -1,0 +1,119 @@
+.magic {
+  background: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.magic .grid {
+  align-items: start;
+}
+
+.magic h1 {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.magic-img img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.magic-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.magic-img li:nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.bicicleta-comprar span {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  max-width: fit-content;
+}
+
+.bicicleta-comprar img {
+  max-width: 100%;
+}
+
+.botao {
+  grid-row: 1 / 3;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-p5);
+  max-width: max-content;
+  border-radius: 4px;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  display: block;
+}
+
+.bicicleta-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  border-radius: 4px;
+  background: var(--cor-12);
+  padding: 30px;
+  gap: 30px;
+}
+
+.bicicleta-info dt {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.ficha-tecnica {
+  padding: 40px 30px;
+  background: var(--cor-12);
+  border-radius: 4px;
+}
+
+.ficha-tecnica div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+@media (max-width: 1030px) {
+  .bicicleta-info {
+    grid-template-columns: 1fr;
+  }
+
+  .magic {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 825px) {
+  .bicicleta-comprar {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .magic .twocolumns {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-comprar .botao {
+    grid-row: 3;
+  }
+}

@@ -39,3 +39,31 @@ footer li {
 footer span {
   margin-bottom: 65px;
 }
+
+@media (max-width: 880px) {
+  .footer img {
+    grid-column: 1 / -1;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .contato {
+    margin-bottom: 0px;
+  }
+
+  .footer span {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+}

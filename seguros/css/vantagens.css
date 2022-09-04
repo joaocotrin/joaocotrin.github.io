@@ -23,3 +23,15 @@
   margin-bottom: 5px;
   color: var(--cor-0);
 }
+
+@media (max-width: 860px) {
+  .vantagens_bg h3 {
+    padding-top: 60px;
+  }
+
+  .vantagens {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+}

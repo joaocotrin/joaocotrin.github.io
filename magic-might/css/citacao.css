@@ -1,0 +1,45 @@
+.citacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cor-p1);
+}
+
+.citacao img {
+  max-width: 100%;
+}
+
+.citacao p {
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.citacao p::before {
+  content: "“";
+  left: -50px;
+  top: -15px;
+}
+
+.citacao p::after {
+  content: "”";
+}
+
+.citacao p::before,
+.citacao p::after {
+  position: absolute;
+  font-size: 5rem;
+  color: var(--cor-p2);
+}
+
+.citacao div {
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 80px;
+  max-width: 90%;
+  background: url(img/dec/bottom-right.svg) no-repeat bottom 40px right 20px;
+}
+
+.citacao span {
+  margin-left: 2.2em;
+}

@@ -6,6 +6,8 @@
 
 .citacao img {
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .citacao p {
@@ -42,4 +44,18 @@
 
 .citacao span {
   margin-left: 2.2em;
+}
+
+@media (max-width: 675px) {
+  .citacao {
+    grid-template-columns: 1fr;
+  }
+
+  .citacao div {
+    padding-top: 80px;
+  }
+
+  .citacao img {
+    grid-row: 2;
+  }
 }

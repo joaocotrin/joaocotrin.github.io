@@ -110,6 +110,8 @@ textarea {
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .mensagem a {
@@ -133,4 +135,41 @@ textarea {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+@media (max-width: 920px) {
+  .box_contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato_dados ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contato_dados::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato_dados ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contato_dados {
+    padding: 20px;
+  }
+
+  .mensagem {
+    padding: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  .titulo {
+    background: none;
+  }
 }

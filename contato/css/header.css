@@ -36,3 +36,21 @@ header img {
   width: 100%;
   transition: 0.2s;
 }
+
+@media (max-width: 890px) {
+  .header div {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .header nav {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+    grid-row: 2;
+  }
+}

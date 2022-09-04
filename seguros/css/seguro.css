@@ -58,7 +58,7 @@
 }
 
 .botao {
-  grid-column: 1;
+  grid-column: 1 / -1;
   margin-top: 30px;
   text-transform: uppercase;
   padding: 15px 35px;
@@ -71,4 +71,44 @@
 .secundario {
   background: linear-gradient(#ffbf00, #f2a50c);
   color: var(--cor-p5);
+}
+
+@media (max-width: 860px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .beneficios li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .seguros li::before {
+    content: url(img/icones/lista.svg);
+    display: inline-block;
+    position: absolute;
+  }
+
+  .seguros_plano li + li {
+    margin-top: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .beneficios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 340px) {
+  .seguros_plano {
+    padding: 40px 30px 30px 40px;
+  }
 }

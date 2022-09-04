@@ -44,3 +44,19 @@
   align-items: flex-end;
   gap: 10px;
 }
+
+@media (max-width: 960px) {
+  .mapa .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa .endereco ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapa .endereco ul {
+    grid-template-columns: 1fr;
+  }
+}

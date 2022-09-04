@@ -1,0 +1,19 @@
+.titulo {
+  background: var(--cor-11);
+}
+
+.titulo div p {
+  padding-top: 60px;
+  position: relative;
+}
+
+.titulo div h1 {
+  padding-bottom: 60px;
+}
+
+.titulo div p::after {
+  content: url(img/dec/top-right.svg);
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}

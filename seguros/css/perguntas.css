@@ -49,3 +49,27 @@
 .perguntas dl div:last-child {
   margin-bottom: 140px;
 }
+
+@media (max-width: 830px) {
+  .perguntas dd {
+    max-width: 90%;
+  }
+
+  .perguntas h3 {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .perguntas dt::after {
+    display: none;
+  }
+
+  .perguntas dt::before {
+    display: none;
+  }
+
+  .perguntas dl div {
+    padding: 20px;
+  }
+}

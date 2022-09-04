@@ -9,6 +9,8 @@
   max-height: auto;
   grid-area: 1/1;
   border-radius: 4px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .img-preco {
@@ -75,7 +77,7 @@
   height: 10px;
 }
 
-.produtos div .grid {
+.bike_info .grid {
   grid-template-columns: 1fr 1fr;
 }
 
@@ -89,4 +91,28 @@
   content: url(img/dec/top-right.svg);
   position: absolute;
   right: 55px;
+}
+
+@media (max-width: 1110px) {
+  .bike_info .grid {
+    grid-template-columns: 1fr;
+  }
+  .produtos a {
+    margin-top: 20px;
+    place-self: end start;
+  }
+}
+
+@media (max-width: 670px) {
+  .produtos div {
+    grid-template-columns: 1fr;
+  }
+
+  .bike_info {
+    grid-column: initial;
+  }
+
+  .produtos_magic_might {
+    background: var(--cor-12);
+  }
 }

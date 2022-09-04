@@ -2,6 +2,7 @@
   background: var(--cor-11);
   box-shadow: inset 0 -80px white, inset 0 80px white;
   margin-bottom: 85px;
+  margin-top: 120px;
 }
 
 .tec_pic {
@@ -35,4 +36,24 @@
   height: 4px;
   width: 267px;
   display: inline-block;
+}
+
+@media (max-width: 890px) {
+  .descricao div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 810px) {
+  .tecnologia_bg {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .tecnologia_bg div {
+    grid-template-columns: 1fr;
+  }
+  .tec_pic {
+    display: none;
+  }
 }
